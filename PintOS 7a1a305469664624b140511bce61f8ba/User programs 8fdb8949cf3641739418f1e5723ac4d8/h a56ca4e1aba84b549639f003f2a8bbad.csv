@@ -1,0 +1,5 @@
+﻿Name,Tags,Descripción
+struct thread,struct,"Estructura de thread en esta fase, ver adentro para más detalles"
+"pstate ","typedef, union","sirve para obtener el estado de un proceso, ver adentro para más información"
+"pstate *search_pstate(parent, tid);",function,"Al ser dados un puntero hacia el padre y un id del hijo que se desea rastrear, esta función es capaz de entregar el estado del proceso hijo"
+,,

@@ -1,0 +1,4 @@
+﻿Name,Tags,Descripción
+currentlock,"lock, struct, variable",un puntero hacia el lock actual
+semaphore_elem,struct,Se le agregó un puntero al thread que se enlaza (para poder reordenarlos para las varcond)
+,,

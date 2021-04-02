@@ -1,0 +1,3 @@
+﻿Name,Tags,Descripción
+lock,struct,se le agregó elem para poder meterlo en una lista
+sort_sema_items,"bool, function",es un comparator para reordenar los items de una lista de semaphore_elem por medio de la prioridad del thread que contiene

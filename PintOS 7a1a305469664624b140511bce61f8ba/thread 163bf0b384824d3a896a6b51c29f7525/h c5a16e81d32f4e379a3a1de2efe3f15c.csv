@@ -1,0 +1,9 @@
+﻿Name,Tags,Descripción
+F,"int32, macro","Es el número que delimita para la coma fija, en este caso se usa notación 17.14 es decir que hay 17 bits para la parte entera y 14 para simular la parte fraccionaria, excluyendo el bit de signo"
+int_to_pq(value),"función, macro, pq1714","toma un entero de 32 bits para convertirlo a la notación pq (17.14 para nosotros) "
+pq_to_int(pq),"función, int32, macro",toma un valor en notación pq y regresa la parte entera
+round_pq(pq),"función, int32, macro","como C por defecto redondea hacía el 0, es decir trunca los números, esta función redondea al entero más cercano. Ej: 0.5 →1 o 0.3→0"
+"pq_mul(pq1, pq2)","función, macro, pq1714","toma 2 números pseudo reales, y los multiplica, esta macro está hecha para evitar el overflow de multiplicarlos a lo seco."
+"pq_div(pq1, pq2)","función, macro, pq1714","toma 2 números pseudo reales y los divide, no valida excepciones de división por 0 o cosas así."
+pq1714,"int32, typedef","es una tipo definido con la finalidad de poder identificar que números tienen en esa notación, pero realmente no importa"
+,,

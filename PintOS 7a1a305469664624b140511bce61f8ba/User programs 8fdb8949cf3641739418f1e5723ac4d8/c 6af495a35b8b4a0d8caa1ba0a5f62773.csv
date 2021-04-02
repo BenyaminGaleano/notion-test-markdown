@@ -1,0 +1,5 @@
+﻿Name,Tags,Descripción
+thread_create,function,se modificó para poder agregar al padre una página para rastrear su hijos y registrarse en ese espacio
+init_thread,function,inicializar los nuevos campos
+,,
+,,

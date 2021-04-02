@@ -1,0 +1,18 @@
+﻿Name,Tags,Descripción
+,,
+thread,struct,modificada toque open para ver la estructura
+to_waiting_room(ticks),"función, void",Manda al thread actual a la lista de espera.
+clean_waiting_room(current_ticks),"función, void",Quita de la lista todos los threads que han expirado su tiempo de espera.
+thread_set_priority(new_priority),"función, void",Modifica la prioridad del thread a new_priority.
+thread_get_priority(),"función, int",Devuelve la prioridad del thread actual.
+"sort_list(a, b, aux)","bool, función",Compara las prioridades de los threads a y b.
+sort_list_by_priority(),"función, void",Ordena la lista de threads por la prioridad (tomando en cuenta si tuvo donaciones de prioridad por locks) .
+get_max_thread_priority(thread),"función, void",Revisa la lista de locks para ver si se cambia su prioridad por donación.
+propage_priority(thred),"función, void","propaga la prioridad de thread hacia el que lo bloquea de forma recursiva, es decir se vuelve a llamar asi mismo para que la propagación hacia adelante se complete."
+yield_if_iam_manco(priority),"función, void","cede el procesador si priority es mayor que la prioridad del current thread, funciona tanto como para MLFQS como para el PS"
+increment_recent_cpu(void),"función, void",incrementa el recent_cpu del thread actual.
+"update_priority(struct thread *t, void *aux)","función, void","actualiza la prioridad de un thread, ignorando la solicitud si se trata del idle_thread"
+update_priority_forall(void),"función, void","actualiza la prioridad de todos los threads, evitando el idle_thread. Esta función es llamada cada 4 ticks que el reloj marca"
+update_recent_cpu(void),"función, void","actualiza el recent_cpu de todos los threads activos, por lo que itera sobre all_list definida en threads. se llama cada segundo"
+update_load_avg(void),"función, void","actualiza el load_avg que se encuentra defina de thread.c, conforme lo marca la formula. es llamada desde timer.c cada 1 segundo."
+load_avg,"pq1714, struct",Es una variable pseudo real para el promedio de carga del procesador.

@@ -1,0 +1,4 @@
+﻿Name,Tags,Descripción
+stack_offset(esp),"function, macro",Retorna el offset necesario para sumarselo a la página devuelta por pagedir_get_page()  esp es la dirección falsa que tiene el usuario sobre el stack
+"stkcast(pointer, type)","function, macro","retorna un valor del tipo type desde pointer, prácticamente es una forma más entendible que colocar *((type *) pointer) ya que en muchos casos esta expresión crece mucho y suele ser un poco inentendible"
+,,

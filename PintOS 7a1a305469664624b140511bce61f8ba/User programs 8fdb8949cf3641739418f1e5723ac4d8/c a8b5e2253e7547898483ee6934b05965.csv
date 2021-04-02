@@ -1,0 +1,5 @@
+﻿Name,Tags,Descripción
+page_fault,function,se agregó linea que impide fallo en modo kernel y solamente sigue el protocolo para informarlo
+kill,function,se agregó exit(-1) en el caso de ser kill para user
+,,
+,,

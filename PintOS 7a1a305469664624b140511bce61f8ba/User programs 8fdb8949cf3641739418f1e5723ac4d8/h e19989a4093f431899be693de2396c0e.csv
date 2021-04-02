@@ -1,0 +1,5 @@
+﻿Name,Tags,Descripción
+get_user(uaddr),function,"lee un byte en la dirección y lo devuelve, sino es posible retorna -1 "
+"put_user(udst, byte)",function,"intenta escribir en la dirección de destino, true si es posible y false si no."
+,,
+,,

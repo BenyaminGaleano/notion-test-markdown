@@ -1,0 +1,7 @@
+﻿Name,Tags,Descripción
+sys_closef,function,cierra un archivo pero requiriendo el lock del filesys
+fsys_lock,function,bloquea el filesys
+fsys_unlock,function,libera al filesys
+,,
+,,
+,,

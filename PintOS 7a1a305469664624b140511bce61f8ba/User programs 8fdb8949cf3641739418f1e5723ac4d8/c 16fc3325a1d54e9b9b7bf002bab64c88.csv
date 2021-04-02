@@ -1,0 +1,7 @@
+﻿Name,Tags,Descripción
+process_execute,function,Se tokeniza el nombre para mandarselo al thread_create
+start_process,function,"tokenizar el comand y alocar los valores en el stack del proceso, notificación del padre cuándo se ha terminado la creación, pide memoria para seguimiento de archivos"
+process_wait,function,"esperar por hijo, se siguen todos los requerimientos que se solicitan en el syscall de wait y en wait sólo se manda a llamar esta función."
+process_exit,function,"se liberan todos los recursos del proceso, se cambia el estado del proceso en el tracking del padre"
+load,function,se prohibe la escritura a los archivos ejecutables
+,,

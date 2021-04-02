@@ -1,0 +1,25 @@
+﻿Name,Tags,Descripción
+fd_t,"typedef, union","descriptor de archivo, expandir para más información."
+fsys_lock,function,bloquea el filesys
+fsys_unlock,function,libera al filesys
+"void checkbytes(pointer, n);
+",function,chequea n bytes de pointer
+"int stdout_and_check(int fd, const void*buffer, unsigned length);
+ ",function,"chequea buffer y también si es stdout, si  se escribe se devuelve la cantidad de bytes escrito, sino -1 diciendo que se ha comprobado todo, pero que no se ha escrito"
+"int stdin_and_check(int fd, void *buffer, unsigned length);",function,"chequea buffer y también si es stdin, si se lee se devuelve la cantidad de bytes leidos, sino -1 diciendo que se ha comprobado todo, pero que no se ha leido"
+"
+void check_file(char *file);
+",function,chequea que los bytes del nombre del archivo (file es el nombre) sean válidos
+struct lock filesys_lock;,function,lock del filesys global
+exit(status),function,sale del proceso preparando las variables necesarias para process_exit
+wait(status),function,llama a process_wait
+create_file,function,crea un archivo en el filesys
+remove_file,function,remueve del filesys un archivo
+open(file),function,abre el archivo lo registra en files del thread y devuelve el descriptor asociado
+filesize(fd),function,devuelve el tamaño del archivo
+"read(fd, buffer, n)",function,lee n bytes del archivo y lo mete en buffer
+"write(fd, buffer, n)",function,escribe n bytes del buffer al archivo
+"seek(fd, position)",function,cambia el puntero al siguiente byte hacia position
+tell(fd),function,retornar la posición del siguiente byte
+close(fd),function,cierra el archivo y lo elimina de files
+,,
